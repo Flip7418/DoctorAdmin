@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>"Главная"</title>
+  <link rel="stylesheet" href="css/doctor-style.min.css?_v=20220620035646" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css?_v=20220620035646" />
+
+</head>
+
+  <body>
+    <div class="container">
+      <div class="navigation">
+  <ul>
+    <li>
+      <a class="Logo" href="">
+        <span class="icon">
+          <img src="img/navigation/LogoImg.svg" alt="" />
+        </span>
+        <span class="title log-title">Help me, robot</span>
+      </a>
+    </li>
+    <li >
+      <a href="/dashboard.html">
+        <span class="icon"><ion-icon name="home"></ion-icon></span>
+        <span class="title">Dashboard </span>
+      </a>
+    </li>
+    <li >
+      <a href="/orders.html">
+        <span class="icon"><ion-icon name="albums"></ion-icon></span>
+        <span class="title">Blogs</span>
+      </a>
+    </li>
+    <li>
+      <a href="">
+        <span class="icon"><ion-icon name="basket"></ion-icon></span>
+        <span class="title">Orders</span>
+      </a>
+    </li>
+    <li>
+      <a href="">
+        <span class="icon"><ion-icon name="medkit"></ion-icon></span>
+        <span class="title">Medications</span>
+      </a>
+    </li>
+    <li>
+      <a href="">
+        <span class="icon"><ion-icon name="log-out"></ion-icon></span>
+        <span class="title">Sign out</span>
+      </a>
+    </li>
+  </ul>
+</div>
+
+      <main class="main">
+        <div class="topbar">
+  <div class="toggle"><ion-icon name="menu"></ion-icon></div>
+  <a href="" class="user"><ion-icon name="person-circle"></ion-icon></a>
+</div>
+
+        <div class="page-title">
+          <h1>Dashboard</h1>
+        </div>
+        <section class="cardBox">
+  <div class="card">
+    <div class="statictics">
+      <div class="numbers">150</div>
+      <div class="cardName">Users</div>
+    </div>
+    <div class="iconBx">
+      <ion-icon style="color: #1F9EC6" name="people"></ion-icon>
+    </div>
+  </div>
+  <div class="card">
+    <div class="statictics">
+      <div class="numbers">30</div>
+      <div class="cardName">Medications</div>
+    </div>
+    <div class="iconBx">
+      <ion-icon style="color: #4CB61A" name="bandage"></ion-icon>
+    </div>
+  </div>
+  <div class="card">
+    <div class="statictics">
+      <div class="numbers">80</div>
+      <div class="cardName">Orders</div>
+    </div>
+    <div class="iconBx">
+      <ion-icon style="color: #8F45C9" name="trending-up"></ion-icon>
+    </div>
+  </div>
+  <div class="card">
+    <div class="statictics">
+      <div class="numbers">70</div>
+      <div class="cardName">Сompleted orders</div>
+    </div>
+    <div class="iconBx">
+      <ion-icon style="color: #CE2289" name="bar-chart"></ion-icon>
+    </div>
+  </div>
+</section>
+ <section class="recentDetails">
+  <div class="recentOrders">
+    <div class="cardHeader">
+      <h2>RecentOrders</h2>
+      <a href="/orders.html" class="recentOrders__btn">View All</a>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <td>Id</td>
+          <td>Order type</td>
+          <td>Date</td>
+          <td>Status</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>80</td>
+          <td>Paracetomol</td>
+          <td>23.04.2022</td>
+          <td><span class="status inProgress">In progress</span></td>
+        </tr>
+        <tr>
+          <td>79</td>
+          <td>Paracetomol</td>
+          <td>23.04.2022</td>
+          <td><span class="status inProgress">In progress</span></td>
+        </tr>
+        <tr>
+          <td>78</td>
+          <td>Paracetomol</td>
+          <td>23.04.2022</td>
+          <td><span class="status inProgress">In progress</span></td>
+        </tr>
+        <tr>
+          <td>76</td>
+          <td>Paracetomol</td>
+          <td>23.04.2022</td>
+          <td><span class="status inProgress">In progress</span></td>
+        </tr>
+        <tr>
+          <td>75</td>
+          <td>Paracetomol</td>
+          <td>23.04.2022</td>
+          <td><span class="status inProgress">In progress</span></td>
+        </tr>
+        <tr>
+          <td>74</td>
+          <td>Paracetomol</td>
+          <td>23.04.2022</td>
+          <td><span class="status inProgress">In progress</span></td>
+        </tr>
+        <tr>
+          <td>73</td>
+          <td>Paracetomol</td>
+          <td>23.04.2022</td>
+          <td><span class="status inProgress">In progress</span></td>
+        </tr>
+        <tr>
+          <td>72</td>
+          <td>Paracetomol</td>
+          <td>23.04.2022</td>
+          <td><span class="status inProgress">In progress</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+      </main>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js?_v=20220620035646"></script>
+    <script src="js/navbar.min.js?_v=20220620035646"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js?_v=20220620035646"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js?_v=20220620035646"></script>
+  </body>
+</html>

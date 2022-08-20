@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>"Заказы"</title>
+  <link rel="stylesheet" href="css/doctor-style.min.css?_v=20220620035646" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css?_v=20220620035646" />
+
+</head>
+
+  <body>
+    <div class="container">
+      <div class="navigation">
+  <ul>
+    <li>
+      <a class="Logo" href="">
+        <span class="icon">
+          <img src="img/navigation/LogoImg.svg" alt="" />
+        </span>
+        <span class="title log-title">Help me, robot</span>
+      </a>
+    </li>
+    <li >
+      <a href="/dashboard.html">
+        <span class="icon"><ion-icon name="home"></ion-icon></span>
+        <span class="title">Dashboard </span>
+      </a>
+    </li>
+    <li >
+      <a href="/orders.html">
+        <span class="icon"><ion-icon name="albums"></ion-icon></span>
+        <span class="title">Blogs</span>
+      </a>
+    </li>
+    <li>
+      <a href="">
+        <span class="icon"><ion-icon name="basket"></ion-icon></span>
+        <span class="title">Orders</span>
+      </a>
+    </li>
+    <li>
+      <a href="">
+        <span class="icon"><ion-icon name="medkit"></ion-icon></span>
+        <span class="title">Medications</span>
+      </a>
+    </li>
+    <li>
+      <a href="">
+        <span class="icon"><ion-icon name="log-out"></ion-icon></span>
+        <span class="title">Sign out</span>
+      </a>
+    </li>
+  </ul>
+</div>
+
+      <main class="main">
+        <div class="topbar">
+  <div class="toggle"><ion-icon name="menu"></ion-icon></div>
+  <a href="" class="user"><ion-icon name="person-circle"></ion-icon></a>
+</div>
+
+        <div class="page-title">
+          <h1>Orders List</h1>
+        </div>
+        <section class="all-orders">
+          <div class="all-orders__tableFeatures">
+            <div class="tableFeatures__tableSelects">
+              <select class="selectMedicine">
+                <option value="all">Order type</option>
+                <option value="pill">pill</option>
+                <option value="simptom">simptom</option>
+
+              </select>
+              <select class="selectStatus">
+                <option value="all">All statuses</option>
+                <option value="on_moderation">on_moderation</option>
+                <option value="declined">declined</option>
+                <option value="approved_and_on_queue">approved_and_on_queue</option>
+                <option value="delivered">delivered</option>
+                <option value="going_to_client">going_to_client</option>
+                <option value="at_client">at_client</option>
+              </select>
+            </div>
+            <div class="tableFeatures__tableSearch">
+              <input type="text" id="myInput" placeholder="Search by ..." />
+              <ion-icon name="search"></ion-icon>
+            </div>
+          </div>
+          <div class="all-orders__table">
+            <table id="Orderstable">
+              <thead>
+                <tr>
+                  <th>Id</th>
+                  <th>Order type</th>
+                  <th>Date</th>
+                  <th>Status</th>
+                  <th>Student</th>
+                  <th>Phone</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>79</td>
+                  <td>pill</td>
+                  <td>06.03.2022</td>
+                  <td><span class="status declined">declined</span></td>
+                  <td>Mia Amant</td>
+                  <td>87756574105</td>
+                  <td><a href="" class="orderEdit View">View</a></td>
+                </tr>
+                <tr>
+                  <td>72</td>
+                  <td>pill</td>
+                  <td>06.03.2022</td>
+                  <td><span class="status declined">declined</span></td>
+                  <td>Mia Amant</td>
+                  <td>87756574105</td>
+                  <td><a href="" class="orderEdit View">View</a></td>
+                </tr>
+                <tr>
+                  <td>74</td>
+                  <td>pill</td>
+                  <td>06.03.2022</td>
+                  <td><span class="status approved_and_on_queue">approved_and_on_queue</span></td>
+                  <td>Mia Amant</td>
+                  <td>87756574105</td>
+                  <td><a href="" class="orderEdit View">View</a></td>
+                </tr>
+                <tr>
+                  <td>79</td>
+                  <td>pill</td>
+                  <td>06.03.2022</td>
+                  <td><span class="status on_moderation">on_moderation</span></td>
+                  <td>Mia Amant</td>
+                  <td>87756574105</td>
+                  <td><a href="" class="orderEdit View">View</a></td>
+                </tr>
+                <tr>
+                  <td>60</td>
+                  <td>pill</td>
+                  <td>06.03.2022</td>
+                  <td><span class="status going_to_client">going_to_client</span></td>
+                  <td>Mia Amant</td>
+                  <td>87756574105</td>
+                  <td><a href="" class="orderEdit View">View</a></td>
+                </tr>
+                <tr>
+                  <td>79</td>
+                  <td>pill</td>
+                  <td>06.03.2022</td>
+                  <td><span class="status delivered">delivered</span></td>
+                  <td>Mia Amant</td>
+                  <td>87756574105</td>
+                  <td><a href="" class="orderEdit View">View</a></td>
+                </tr>
+                <tr>
+                  <td>79</td>
+                  <td>pill</td>
+                  <td>06.03.2022</td>
+                  <td><span class="status delivered">delivered</span></td>
+                  <td>Mia Amant</td>
+                  <td>87756574105</td>
+                  <td><a href="" class="orderEdit View">View</a></td>
+                </tr>
+                <tr>
+                  <td>79</td>
+                  <td>pill</td>
+                  <td>06.03.2022</td>
+                  <td><span class="status on_moderation">on_moderation</span></td>
+                  <td>Mia Amant</td>
+                  <td>87756574105</td>
+                  <td><a href="" class="orderEdit View">View</a></td>
+                </tr>
+                <tr>
+                  <td>79</td>
+                  <td>symptom</td>
+                  <td>06.03.2022</td>
+                  <td><span class="status on_moderation">on_moderation</span></td>
+                  <td>Mia Amant</td>
+                  <td>87756574105</td>
+                  <td><a href="" class="orderEdit View">View</a></td>
+                </tr>
+                <tr>
+                  <td>79</td>
+                  <td>pill</td>
+                  <td>06.03.2022</td>
+                  <td><span class="status on_moderation">on_moderation</span></td>
+                  <td>Mia Amant</td>
+                  <td>87756574105</td>
+                  <td><a href="" class="orderEdit View">View</a></td>
+                </tr>
+                <tr>
+                  <td>79</td>
+                  <td>symptom</td>
+                  <td>06.03.2022</td>
+                  <td><span class="status on_moderation">on_moderation</span></td>
+                  <td>Mia Amant</td>
+                  <td>87756574105</td>
+                  <td><a href="" class="orderEdit View">View</a></td>
+                </tr>
+                <tr>
+                  <td>79</td>
+                  <td>symptom</td>
+                  <td>06.03.2022</td>
+                  <td><span class="status on_moderation">on_moderation</span></td>
+                  <td>Mia Amant</td>
+                  <td>87756574105</td>
+                  <td><a href="" class="orderEdit View">View</a></td>
+                </tr>
+                <tr>
+                  <td>79</td>
+                  <td>symptom</td>
+                  <td>06.03.2022</td>
+                  <td><span class="status on_moderation">on_moderation</span></td>
+                  <td>Mia Amant</td>
+                  <td>87756574105</td>
+                  <td><a href="" class="orderEdit View">View</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js?_v=20220620035646"></script>
+    <script src="js/navbar.min.js?_v=20220620035646"></script>
+    <script src="js/ordersTable.min.js?_v=20220620035646"></script>
+    
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js?_v=20220620035646">
+      </script>
+          <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js?_v=20220620035646">
+    </script>
+  </body>
+</html>

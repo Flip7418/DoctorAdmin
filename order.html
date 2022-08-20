@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>"Главная"</title>
+  <link rel="stylesheet" href="css/doctor-style.min.css?_v=20220620035646" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css?_v=20220620035646" />
+
+</head>
+
+  <body>
+    <div class="container">
+      <div class="navigation">
+  <ul>
+    <li>
+      <a class="Logo" href="">
+        <span class="icon">
+          <img src="img/navigation/LogoImg.svg" alt="" />
+        </span>
+        <span class="title log-title">Help me, robot</span>
+      </a>
+    </li>
+    <li >
+      <a href="/dashboard.html">
+        <span class="icon"><ion-icon name="home"></ion-icon></span>
+        <span class="title">Dashboard </span>
+      </a>
+    </li>
+    <li >
+      <a href="/orders.html">
+        <span class="icon"><ion-icon name="albums"></ion-icon></span>
+        <span class="title">Blogs</span>
+      </a>
+    </li>
+    <li>
+      <a href="">
+        <span class="icon"><ion-icon name="basket"></ion-icon></span>
+        <span class="title">Orders</span>
+      </a>
+    </li>
+    <li>
+      <a href="">
+        <span class="icon"><ion-icon name="medkit"></ion-icon></span>
+        <span class="title">Medications</span>
+      </a>
+    </li>
+    <li>
+      <a href="">
+        <span class="icon"><ion-icon name="log-out"></ion-icon></span>
+        <span class="title">Sign out</span>
+      </a>
+    </li>
+  </ul>
+</div>
+
+      <main class="main">
+        <div class="topbar">
+  <div class="toggle"><ion-icon name="menu"></ion-icon></div>
+  <a href="" class="user"><ion-icon name="person-circle"></ion-icon></a>
+</div>
+
+        <div class="page-title">
+          <h1>Order</h1>
+        </div>
+        <section class="order">
+          <div class="order__content">
+            <div class="order__title">Order details</div>
+            <div class="order__infor">
+              <div class="infor__title">Id:</div>
+              <div class="infor__text">25</div>
+            </div>
+            <div class="order__infor">
+              <div class="infor__title">Student:</div>
+              <div class="infor__text">180107062 Aida Batyrkhanova 87756574105</div>
+            </div>
+            <div class="order__infor">
+              <div class="infor__title">Order type:</div>
+              <div class="infor__text">symptom</div>
+            </div>
+            <div class="order__infor">
+              <div class="infor__title">Created at:</div>
+              <div class="infor__text">25.07.2022</div>
+            </div>
+            <div class="order__infor">
+              <div class="infor__title">Destination:</div>
+              <div class="infor__text">Red-cantin</div>
+            </div>
+            <div class="order__infor">
+              <div class="infor__title">Status:</div>
+              <div class="status going_to_client">going_to_client</div>
+            </div>
+            <div class="order__infor">
+              <div class="infor__title">Comments:</div>
+              <div class="infor__text comments">
+                There are many delivery robots, but we focus on our university. We want our robot to deliver medicines and take care of
+                our students.
+              </div>
+            </div>
+            <div class="order__infor">
+              <div class="infor__title">Symptoms:</div>
+              <div class="infor__text comments Sym-block">
+                <div class="Sym-block__Sitem">Headache</div>
+                <div class="Sym-block__Sitem">Migrane</div>
+                <div class="Sym-block__Sitem">Thoothache</div>
+              </div>
+            </div>
+            <div class="order__infor">
+              <div class="infor__title">Pills:</div>
+              <div class="infor__text comments Sym-block">
+                <div class="Sym-block__Sitem med-block">
+                  <div class="med-block__med-name">Paracetomol</div>
+                  <div class="med-block__med-count">2</div>
+                </div>
+                <div class="Sym-block__Sitem med-block">
+                  <div class="med-block__med-name">Analgin</div>
+                  <div class="med-block__med-count">1</div>
+                </div>
+                <div class="Sym-block__Sitem med-block">
+                  <div class="med-block__med-name">Activated charcoal</div>
+                  <div class="med-block__med-count">4</div>
+                </div>
+              </div>
+            </div>
+            <div class="order__infor">
+              <div class="infor__title">Doctor contacts:</div>
+              <div class="infor__text">Sania Kaliyeva 87756574105</div>
+            </div>
+            <div class="order__buttons">
+              <button class="order__button decline-btn">Decline</button>
+              <button class="order__button accept-btn">Accept</button>
+            </div>
+          </div>
+          <div class="order-popup close-order-popup">
+            <div class="close-popup"></div>
+            <div class="popup-decline__content">
+              <div class="popup-decline__title">Please write decline reason</div>
+              <textarea
+                class="popup-decline__text"
+                name="popup-decline__text"
+                id=""
+                cols="30"
+                rows="30"
+                placeholder="Write here ..."
+              ></textarea>
+            </div>
+            <div class="popup-accept__content" hidden="true">
+              <div class="popup-accept__title">Please select pills</div>
+              <div class="popup-accept__popup-pills">
+                <div class="popup-pillItem">
+                  <div class="popup-pillItem__img" style="background-image: url(img/product/Ибупрофен-б.png)"></div>
+                  <div class="popup-pillItem__medicine-info">
+                    <div class="medicine-info__name">Paracetamol</div>
+                    <div class="medicine-info__cure">The cure for:</div>
+                    <div class="medicine-info__cure-for">migraine, toothache and headache, pain from injuries and burns</div>
+                  </div>
+                  <div class="popup-pillItem__basket-adding">
+                    <div class="basket-adding__counter counter-wrapper">
+                      <div class="counter__control" data-action="minus"></div>
+                      <div class="counter__curerent" data-counter>1</div>
+                      <div class="counter__control" data-action="plus"></div>
+                    </div>
+                    <button class="medicine-button order__button" type="button" data-cart>Add</button>
+                  </div>
+                </div>
+                <div class="popup-pillItem">
+                  <div class="popup-pillItem__img" style="background-image: url(img/product/Анальгин-б.png)"></div>
+                  <div class="popup-pillItem__medicine-info">
+                    <div class="medicine-info__name">Paracetamol</div>
+                    <div class="medicine-info__cure">The cure for:</div>
+                    <div class="medicine-info__cure-for">migraine, toothache and</div>
+                  </div>
+                  <div class="popup-pillItem__basket-adding">
+                    <div class="basket-adding__counter counter-wrapper">
+                      <div class="counter__control" data-action="minus"></div>
+                      <div class="counter__curerent" data-counter>1</div>
+                      <div class="counter__control" data-action="plus"></div>
+                    </div>
+                    <button class="medicine-button order__button" type="button" data-cart>Add</button>
+                  </div>
+                </div>
+                <div class="popup-pillItem">
+                  <div class="popup-pillItem__img" style="background-image: url(img/product/Анальгин-б.png)"></div>
+                  <div class="popup-pillItem__medicine-info">
+                    <div class="medicine-info__name">Paracetamol</div>
+                    <div class="medicine-info__cure">The cure for:</div>
+                    <div class="medicine-info__cure-for">migraine, toothache and</div>
+                  </div>
+                  <div class="popup-pillItem__basket-adding">
+                    <div class="basket-adding__counter counter-wrapper">
+                      <div class="counter__control" data-action="minus"></div>
+                      <div class="counter__curerent" data-counter>1</div>
+                      <div class="counter__control" data-action="plus"></div>
+                    </div>
+                    <button class="medicine-button order__button" type="button" data-cart>Add</button>
+                  </div>
+                </div>
+              </div>
+              <div class="popup-accept__title">Accepted pills</div>
+              <div class="popup-accept__popup-basket">
+                <!-- <div class="popup-basket__pill">
+                  <div class="pill__title">Paracetomol</div>
+                  <div class="pill__counter counter-wrapper">
+                    <div class="counter__control" data-action="minus"></div>
+                    <div class="counter__curerent" data-counter>1</div>
+                    <div class="counter__control" data-action="plus"></div>
+                  </div>
+                </div>
+                <div class="popup-basket__pill">
+                  <div class="pill__title">Analgin</div>
+                  <div class="pill__counter counter-wrapper">
+                    <div class="counter__control" data-action="minus"></div>
+                    <div class="counter__curerent" data-counter>1</div>
+                    <div class="counter__control" data-action="plus"></div>
+                  </div>
+                </div>
+                <div class="popup-basket__pill">
+                  <div class="pill__title">Analgin</div>
+                  <div class="pill__counter counter-wrapper">
+                    <div class="counter__control" data-action="minus"></div>
+                    <div class="counter__curerent" data-counter>1</div>
+                    <div class="counter__control" data-action="plus"></div>
+                  </div>
+                </div>
+                <div class="popup-basket__pill">
+                  <div class="pill__title">Analgin</div>
+                  <div class="pill__counter counter-wrapper">
+                    <div class="counter__control" data-action="minus"></div>
+                    <div class="counter__curerent" data-counter>1</div>
+                    <div class="counter__control" data-action="plus"></div>
+                  </div>
+                </div> -->
+              </div>
+            </div>
+            <button class="order__button send-btn">Send</button>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js?_v=20220620035646"></script>
+    <script src="js/navbar.min.js?_v=20220620035646"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js?_v=20220620035646"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js?_v=20220620035646"></script>
+    <script>
+      document.addEventListener("click", function (event) {
+        const popup = document.querySelector(".order-popup");
+        const decline_cont = document.querySelector(".popup-decline__content");
+        const accept_cont = document.querySelector(".popup-accept__content");
+
+        if (event.target.classList.contains("decline-btn")) {
+          decline_cont.hidden = false;
+          accept_cont.hidden = true;
+          popup.classList.toggle("active-order-popup");
+          popup.classList.remove("close-order-popup");
+        } else if (event.target.classList.contains("accept-btn")) {
+          accept_cont.hidden = false;
+          decline_cont.hidden = true;
+          popup.classList.toggle("active-order-popup");
+          popup.classList.remove("close-order-popup");
+        } else if (event.target.classList.contains("close-popup")) {
+          popup.classList.remove("active-order-popup");
+          popup.classList.toggle("close-order-popup");
+        }
+      });
+      document.addEventListener("click", function (event) {
+        let counter;
+
+        if (event.target.dataset.action === "plus" || event.target.dataset.action === "minus") {
+          const counterWrapper = event.target.closest(".counter-wrapper");
+          counter = counterWrapper.querySelector("[data-counter]");
+        }
+
+        if (event.target.dataset.action === "plus") {
+          counter.innerText = ++counter.innerText;
+        }
+        if (event.target.dataset.action === "minus") {
+          if (parseInt(counter.innerText) > 1) {
+            counter.innerText = --counter.innerText;
+          } else if (event.target.closest(".popup-accept__popup-basket") && parseInt(counter.innerText) === 1) {
+            event.target.closest(".popup-basket__pill").remove();
+          }
+        }
+      });
+      const cartWrapper = document.querySelector(".popup-accept__popup-basket");
+      document.addEventListener("click", function (event) {
+        if (event.target.hasAttribute("data-cart")) {
+          const card = event.target.closest(".popup-pillItem");
+          const productInfo = {
+            id: card.dataset.id,
+            title: card.querySelector(".medicine-info__name").innerText,
+            counter: card.querySelector("[data-counter]").innerText,
+          };
+
+          const itemInCart = cartWrapper.querySelector(`[data-id="${productInfo.id}"]`);
+          if (itemInCart) {
+            const counterElement = itemInCart.querySelector("[data-counter]");
+            counterElement.innerText = parseInt(counterElement.innerText) + parseInt(productInfo.counter);
+          } else {
+            const cartItemHTML = `
+    <div class="popup-basket__pill" data-id="${productInfo.id}">
+                  <div class="pill__title">${productInfo.title}</div>
+                  <div class="pill__counter counter-wrapper">
+                    <div class="counter__control" data-action="minus"></div>
+                    <div class="counter__curerent" data-counter>${productInfo.counter}</div>
+                    <div class="counter__control" data-action="plus"></div>
+                  </div>
+                </div>
+    `;
+            cartWrapper.insertAdjacentHTML("beforeend", cartItemHTML);
+          }
+          card.querySelector("[data-counter]").innerText = "1";
+        }
+      });
+    </script>
+  </body>
+</html>
